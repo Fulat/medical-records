@@ -21,7 +21,7 @@ const Users = db.define("users", {
     profile_image: {
         type: Sequelize.STRING,
         allowNull: false
-    },
+    }
 })
 
 module.exports = Users
