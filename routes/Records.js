@@ -8,7 +8,6 @@ router.get("/user/:id", async (req, res) => {
         where: {
             userId: req.params.id,
         },
-        attributes: ["id"],
         include: {
             model: Users,
             attributes: ["id", "first_name", "last_name", "email", "profile_image"],
